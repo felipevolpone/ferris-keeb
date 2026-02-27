@@ -23,6 +23,9 @@
 #define XXX &none
 #define ___ &trans
 
+#define SCRL_UP_FAST MOVE_Y(25)
+#define SCRL_DOWN_FAST MOVE_Y(-25)
+
 #define QUICK_TAP_MS 140
 
 &sk {
@@ -158,7 +161,7 @@ ZMK_BASE_LAYER(Fn,
 )
 
 ZMK_BASE_LAYER(Num,
-    &kp N1        &kp N2        &kp N3        &kp N4        &kp N5        ,   &msc SCRL_UP &msc SCRL_DOWN   &kp N8        &kp N9      &kp N0,
+    &kp N1        &kp N2        &kp N3        &kp N4        &kp N5        ,   &msc SCRL_UP_FAST &msc SCRL_DOWN_FAST   &kp N8        &kp N9      &kp N0,
     &kp N6        &kp N7        &kp N8        &kp N9        &kp N0        ,   ___           ___ ___         ___         ___,
     &kp ASTERISK  &kp PLUS      &kp MINUS     &kp SLASH     &kp COLON ,   ___ ___ ___ ___ ___,
                                        &kp SPACE      &kp BACKSPACE       ,   ___ ___
